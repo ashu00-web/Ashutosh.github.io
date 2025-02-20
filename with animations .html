@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashutosh - Embedded Systems Engineer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background-color: #f7f9fb;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* Header styling */
+        header {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #2c3e50; /* Deep blue-gray */
+            color: white;
+            margin-bottom: 40px;
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.2em;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+
+        .contact-info a, .contact-info span {
+            color: #ecf0f1;
+            font-size: 1em;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            color: #1abc9c;
+        }
+
+        /* Section Styling */
+        .section {
+            background: #ffffff;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+            animation-delay: 0.5s;
+        }
+
+        h2 {
+            color: #34495e;
+            font-size: 2em;
+            font-weight: 600;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .skills, .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .skills div, .projects div {
+            padding: 15px;
+            background: #ecf0f1;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .skills div:hover, .projects div:hover {
+            transform: translateY(-5px);
+            background-color: #1abc9c;
+            color: white;
+        }
+
+        .tech-stack {
+            color: #3498db;
+            font-size: 0.9em;
+            margin: 10px 0;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        a {
+            color: #3498db;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #1abc9c;
+            text-decoration: underline;
+        }
+
+        /* Hover effects on links */
+        .hover-underline {
+            position: relative;
+        }
+
+        .hover-underline::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: #1abc9c;
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+        }
+
+        .hover-underline:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+
+        /* Fade-in and slide-up effect on scroll */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            .section {
+                padding: 20px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Ashutosh</h1>
+            <p>Embedded Systems Engineer | Innovator | Problem Solver</p>
+            <div class="contact-info">
+                <span>📍 Thunder Bay, ON, CA</span>
+                <a href="mailto:vatsashu2207@gmail.com">📧 vatsashu2207@gmail.com</a>
+                <a href="tel:+16477408224">📱 +1 (647) 740-8224</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- About Section -->
+        <section class="section fade-up">
+            <h2>About Me</h2>
+            <p>I'm an embedded systems engineer with a passion for designing innovative and real-time embedded solutions. With extensive experience in firmware development, hardware-software integration, and the development of safety-critical systems, I strive to improve the performance and efficiency of electronic systems. Currently, I am advancing my expertise through a postgraduate program in Embedded Systems at Confederation College.</p>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section fade-up">
+            <h2>Technical Skills</h2>
+            <div class="skills">
+                <div>
+                    <h3>Languages</h3>
+                    <p>C, C++, Python, Assembly</p>
+                </div>
+                <div>
+                    <h3>Embedded Protocols</h3>
+                    <p>SPI, I2C, UART, RS-485, FreeRTOS</p>
+                </div>
+                <div>
+                    <h3>Microcontrollers</h3>
+                    <p>ARM Cortex-M3/M4, STM32, STM8, Tiva C Series</p>
+                </div>
+                <div>
+                    <h3>Development Tools</h3>
+                    <p>Keil, STM32CubeMX, Altium Designer</p>
+                </div>
+                <div>
+                    <h3>Software Documentation</h3>
+                    <p>BOM Management, Test Procedures, Component Sourcing</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section fade-up">
+            <h2>Projects</h2>
+            
+            <div class="projects">
+                <div>
+                    <h3>I2C Encoder-based Motor Control</h3>
+                    <p class="tech-stack">ARM Cortex-M3, I2C, RTC Module</p>
+                    <ul>
+                        <li>Precise speed and position tracking</li>
+                        <li>Integrated RTC for time-stamped control</li>
+                        <li>Implemented for robotics and automation</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>EP Assist Braking System</h3>
+                    <p class="tech-stack">C, ARM Cortex-M3, RS-485</p>
+                    <ul>
+                        <li>Optimized braking performance for trains</li>
+                        <li>Real-time communication with train control systems</li>
+                        <li>Ensured compliance with railway safety standards</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Wheel Slide Protection System</h3>
+                    <p class="tech-stack">TI DSP, C</p>
+                    <ul>
+                        <li>Reduced train wheel wear during braking</li>
+                        <li>Improved safety in adverse weather conditions</li>
+                        <li>Integrated with real-time systems</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Vehicle Tracking & Engine Locking</h3>
+                    <p class="tech-stack">GPS, GSM, ARM Cortex-M0</p>
+                    <ul>
+                        <li>Tracked vehicle location and engine status</li>
+                        <li>Remote engine locking via SMS commands</li>
+                        <li>Enhanced commercial vehicle security</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="section fade-up">
+            <h2>Experience</h2>
+            
+            <div class="experience-item">
+                <h3>Research Assistant - Confederation College</h3>
+                <p class="tech-stack">Jan 2025 - Present</p>
+                <ul>
+                    <li>Developed firmware for real-time embedded systems</li>
+                    <li>Assisted with research and development of new technologies</li>
+                    <li>Collaborated with faculty on academic and industry projects</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>Assistant Manager (R&D Railway) - Escorts Kubota Limited</h3>
+                <p class="tech-stack">Dec 2021 - Jun 2023</p>
+                <ul>
+                    <li>Designed safety-critical firmware for railway braking systems</li>
+                    <li>Field-tested embedded systems in operational railway environments</li>
+                    <li>Contributed to the development of cutting-edge transport solutions</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="section fade-up">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>Post Graduate in Embedded Systems</h3>
+                <p class="tech-stack">Confederation College (2023-2025)</p>
+            </div>
+            <div class="education-item">
+                <h3>B.Tech in Electronics & Instrumentation</h3>
+                <p class="tech-stack">J.C Bose YMCA University (2018-2021)</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section fade-up">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <a href="https://linkedin.com/in/yourprofile" class="hover-underline">LinkedIn</a>
+                <a href="https://github.com/yourprofile" class="hover-underline">GitHub</a>
+                <a href="Ashutosh_Resume.pdf" download class="hover-underline">Download Resume</a>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
